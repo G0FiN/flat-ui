@@ -115,3 +115,26 @@ h1 {
   font-size: 14px;
   color: #777777;
 }
+
+@keyframes expand-card {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-color-card {
+  animation: expand-card 2s ease-in-out forwards;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

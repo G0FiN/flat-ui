@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import colorData from "./colors.json";
-
-const ColorCard = ({ name, color }) => (
-  <div className="color-card" style={{ backgroundColor: color }}>
-    <h3>{name}</h3>
-    <p>{color}</p>
-  </div>
-);
+import ColorCard from "./ColorCard";
 
 function App() {
   const [selectedPalette, setSelectedPalette] = useState(0);
