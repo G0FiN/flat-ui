@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Color Cards</h1>
+      <h1>Serhii Vodianov <br/> Color Cards</h1>
       <div className="palette-buttons">
         {colorData.map((palette, index) => (
           <button
