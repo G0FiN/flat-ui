@@ -1,20 +1,17 @@
 import React from "react";
+import soundFile from "./sound.mp3";
 import "./App.css";
 
 
 const ColorCard = ({ name, color }) => {
     const handleCardClick = () => {
-        // Save color to clipboard
         navigator.clipboard.writeText(color);
       
-        // Play short sound
-        // const audio = new Audio("./sound.mp3");
-        // audio.play();
+        const audio = new Audio(soundFile);
+        audio.play();
       
-        // Add animation class to color card for one second
         const cardElement = document.getElementById(color);
         if (cardElement) {
-          // Hide other color cards
           const colorCards = document.getElementsByClassName("color-card");
           Array.from(colorCards).forEach((card) => {
             if (card.id !== color) {
