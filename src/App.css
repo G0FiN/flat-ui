@@ -47,6 +47,30 @@ h1 {
   margin-bottom: 20px;
 }
 
+.palette-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.palette-buttons button {
+  margin: 0 5px;
+  font-size: 24px;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.palette-buttons button.active {
+  transform: scale(1.4);
+}
+
+.palette-buttons button:hover {
+  transform: scale(1.5);
+}
+
 .color-cards {
   display: flex;
   flex-wrap: wrap;
