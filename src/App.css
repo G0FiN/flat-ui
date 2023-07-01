@@ -61,6 +61,11 @@ h1 {
   background-color: transparent;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .palette-buttons button.active {
@@ -69,6 +74,11 @@ h1 {
 
 .palette-buttons button:hover {
   transform: scale(1.5);
+}
+
+.palette-name {
+  font-size: 10px;
+  font-weight: bolder;
 }
 
 .color-cards {
@@ -105,4 +115,3 @@ h1 {
   font-size: 14px;
   color: #777777;
 }
-

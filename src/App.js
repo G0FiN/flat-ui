@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './App.css';
-import colorData from './colors.json';
+import React, { useState } from "react";
+import "./App.css";
+import colorData from "./colors.json";
 
 const ColorCard = ({ name, color }) => (
   <div className="color-card" style={{ backgroundColor: color }}>
@@ -25,10 +25,13 @@ function App() {
         {colorData.map((palette, index) => (
           <button
             key={palette.id}
-            className={selectedPalette === index ? 'active' : ''}
+            className={selectedPalette === index ? "active" : ""}
             onClick={() => handlePaletteChange(index)}
           >
-            {palette.emoji}
+            <span className="emoji">{palette.emoji}</span>
+            <span className="palette-name">
+              {selectedPalette === index ? palette.paletteName : null}
+            </span>
           </button>
         ))}
       </div>
